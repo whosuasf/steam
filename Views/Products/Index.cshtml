@@ -1,0 +1,12 @@
+<h1>Список товаров</h1>
+<div class="product-list">
+    @foreach (var product in Model)
+    {
+        <div class="product-item">
+            <h2>@product.Name</h2>
+            <p>@product.Description</p>
+            <p>Цена: @product.Price ₽</p>
+            <a href="/Products/Details/@product.Id">Подробнее</a>
+        </div>
+    }
+</div>
